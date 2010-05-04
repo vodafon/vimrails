@@ -1,11 +1,11 @@
-source ~/.vim/vimrc "Собственно, подцепить все настройки от Akita
-colorscheme vibrantink "Приятная цветовая схема в стиле TexMate
-set nu "Отображать номер астрок
-set sw=4 "Заменяет TAB на 2 пробела
-set sts=4 "Аналогично, но в случае автоотступа
+colorscheme vibrantink "Nice ColorScheme like TexMate
+set nu "number string
+set sw=4 "TAB = 4 space
+set sts=4 "autotab = 4 space
 let g:fuzzy_ignore = "gems/*"
 
-"Use Vim settings, rather then Vi settings (much better!).
+"Settings by Akita + Vodafon
+""Use Vim settings, rather then Vi settings (much better!).
 "This must be first, because it changes other options as a side effect.
 set nocompatible
 
@@ -315,6 +315,7 @@ function! s:HighlightLongLines(width)
     endif
 endfunction
 
+"Keys in Russian encoding. Delete it if You not use Russian
 map ё `
   map й q
   map ц w
