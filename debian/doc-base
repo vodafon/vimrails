@@ -1,0 +1,9 @@
+Document: vim-rails
+Title: vim-rails scripts web pages
+Author: Various
+Abstract: Web pages of vim scripts shipped with vim-rails
+Section: Apps/Tools
+
+Format: HTML
+Index: /usr/share/doc/vim-rails/html/index.html
+Files: /usr/share/doc/vim-rails/html/*

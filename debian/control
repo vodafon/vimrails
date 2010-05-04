@@ -1,0 +1,27 @@
+Source: vim-rails
+Section: universe/editors
+Priority: optional
+Maintainer: Ubuntu MOTU Developers <ubuntu-motu@lists.ubuntu.com>
+XSBC-Original-Maintainer: Neil Wilson <aldursys@gmail.com>
+XS-Vcs-Bzr: https://code.launchpad.net/~vcs-imports/3accounts/vim-rails
+Build-Depends: debhelper (>> 5.0.0)
+Standards-Version: 3.8.0
+
+Package: vim-rails
+Architecture: all
+Depends: vim-full, vim-addon-manager
+Enhances: vim, gvim
+Conflicts: vim-scripts
+Recommends: exuberant-ctags
+Description: plugins for vim to allow easier editing of Rails Applications
+ This package is a selection of vimscripts that make editing Ruby on
+ Rails applications extremely easy. This package includes:
+ .
+  - rails.vim plugin by Tim Pope
+  - surround.vim plugin
+  - project.vim plugin
+  - tailminusf.vim plugin
+  - Cucumber syntax
+  - Haml/saas syntax files
+ . 
+ And 3 nice dark colorschemes for vim...

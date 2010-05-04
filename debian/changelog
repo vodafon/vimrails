@@ -1,0 +1,108 @@
+vim-rails (0.6-uor0) jaunty; urgency=low
+
+  * Added tailminusf.vim for easy tail -f with rails.vim
+  * Bumped package version
+  * Rebuild for Ubuntu on Rails PPA
+
+ -- Antono Vasiljev <antono.vasiljev@gmail.com>  Tue, 21 Jul 2009 02:27:38 +0300
+
+vim-rails (0.5ubuntu2) jaunty; urgency=low
+
+  * Updated vim-haml and rails.vim to latest git versions.
+
+ -- Antono Vasiljev <antono.vasiljev@gmail.com>  Sun, 19 Jul 2009 03:59:05 +0300
+
+vim-rails (0.5ubuntu1) jaunty; urgency=low
+
+  * Updated debian/vim-scripts.status
+  * Updated html/index.html
+  * Updated vim-rails.yaml 
+
+ -- Antono Vasiljev <antono.vasiljev@gmail.com>  Wed, 03 Jun 2009 01:50:59 +0300
+
+vim-rails (0.5) jaunty; urgency=low
+
+  * Updated rails.vim and surround.vim from github.com
+  * Added vim-cucumber from Tim Pope
+  * Added vim-haml from Tim Pope
+  * Nice wombat colorscheme
+
+ -- Antono Vasiljev <antono.vasiljev@gmail.com>  Tue, 02 Jun 2009 21:56:42 +0300
+
+vim-rails (0.4) intrepid; urgency=low
+
+  * Update scripts to latest version
+
+ -- Neil Wilson <neil@brightbox.co.uk>  Mon, 30 Jun 2008 12:44:38 +0100
+
+vim-rails (0.4~ppa5) hardy; urgency=low
+
+  * New Upstream version of rails.vim
+  * New Upstream version of dbext.vim 
+
+ -- Neil Wilson <neil@brightbox.co.uk>  Thu, 19 Jun 2008 15:01:15 +0100
+
+vim-rails (0.4~ppa4) hardy; urgency=low
+
+  * Update html and yaml files.
+
+ -- Neil Wilson <aldursys@gmail.com>  Tue, 13 May 2008 09:23:56 +0100
+
+vim-rails (0.4~ppa3) hardy; urgency=low
+
+  * Update to latest versions of scripts
+
+ -- Neil Wilson <aldursys@gmail.com>  Mon, 12 May 2008 11:35:44 +0100
+
+vim-rails (0.4~ppa2) gutsy; urgency=low
+
+  * Update Scripts to latest version
+
+ -- Neil Wilson <aldursys@gmail.com>  Fri, 15 Feb 2008 14:08:37 +0000
+
+vim-rails (0.4~ppa1) gutsy; urgency=low
+
+  * Update scripts to latest version
+    - rails.vim
+    - surround.vim
+    - dbext.vim
+
+ -- Neil Wilson <aldursys@gmail.com>  Wed, 05 Dec 2007 04:01:26 +0000
+
+vim-rails (0.3) gutsy; urgency=low
+
+  * Public release
+
+ -- Neil Wilson <aldursys@gmail.com>  Thu, 23 Aug 2007 19:49:11 +0100
+
+vim-rails (0.3~ppa1) gutsy; urgency=low
+
+  * Closes LP#131947: vim-rails doesn't work with vim-addon-manager
+  * Updated to latest version of vim plugins
+  * Make vim-rails use subversion automatically
+  * Make the Rails menu appear directly in the menu bar
+
+ -- Neil Wilson <aldursys@gmail.com>  Sat, 18 Aug 2007 13:58:50 +0100
+
+vim-rails (0.2) gutsy; urgency=low
+
+  * Updated copyright details for all scripts.
+  * Make 'vim-rails-setup' tell you what it is doing.
+  * Now uses GPLv3.
+
+ -- Neil Wilson <aldursys@gmail.com>  Wed, 18 Jul 2007 09:46:51 +0100
+
+vim-rails (0.1ubuntu1) gutsy; urgency=low
+
+  * Improve 'debian/rules' so that it is a better Makefile.
+  * Make the documentation auto-generating.
+  * Improve license descriptions.
+  * Add man-page for 'vim-rails-setup'.
+
+ -- Neil Wilson <aldursys@gmail.com>  Wed, 11 Jul 2007 10:11:58 +0100
+
+vim-rails (0.1) gutsy; urgency=low
+
+  * Initial release. 
+
+ -- Neil Wilson <aldursys@gmail.com>  Wed, 27 Jun 2007 10:00:01 +0100

@@ -1,0 +1,14 @@
+This package is a collection of Vim scripts designed to make editing
+Rails applications an absolute doddle.
+
+The primary focus is the excellent 'rails.vim' script written by Tim
+pope, plus a couple other supporting scripts (allml.vim, surround.vim)
+also by Tim.
+
+Added to these are 'project.vim' and 'dbext.vim' which provide a file
+explorer and direct database access respectively.
+
+I've also included the haml syntax file.
+
+-- Neil Wilson <aldursys@gmail.com>  Wed, 27 Jun 2007 10:00:01 +0100
+

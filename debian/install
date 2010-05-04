@@ -1,0 +1,8 @@
+autoload/   usr/share/vim/addons/
+colors/	    usr/share/vim/addons/
+doc/	    usr/share/vim/addons/
+plugin/	    usr/share/vim/addons/
+syntax/	    usr/share/vim/addons/
+*.vim       usr/share/vim/addons/
+vim-rails.yaml usr/share/vim/registry/
+vim-rails-setup usr/bin/

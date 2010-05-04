@@ -1,0 +1,71 @@
+#!/usr/bin/make -f
+# Sample debian/rules that uses debhelper.
+# GNU copyright 1997 to 1999 by Joey Hess.
+
+# Uncomment this to turn on verbose mode.
+#export DH_VERBOSE=1
+PERL = /usr/bin/perl
+MKDIR = mkdir -p
+
+#include /usr/share/dpatch/dpatch.make
+
+# A lot of superfluous targets for this simple package. I leave them all
+# in so that people not looking into this file are not surprised when
+# they try "debian/rules build" and such.
+
+.PHONY: build
+build: debian/copyright
+
+.PHONY: prep
+prep: debian/copyright html vim-rails.yaml
+
+.PHONY: clean clean1
+clean: clean1
+clean1:
+	dh_testdir
+	dh_testroot
+	dh_clean 
+
+.PHONY: install
+install:
+
+.PHONY: binary-arch
+binary-arch:
+# Nothing to do here.
+
+.PHONY: debian/copyright
+debian/copyright: debian/vim-scripts.status
+	$(PERL) debian/vim-scripts.pl copyright > $@
+
+.PHONY: html
+html: debian/vim-scripts.status
+	$(MKDIR) $@
+	-rm -f $@/*.html
+	$(PERL) debian/vim-scripts.pl doc 
+
+vim-rails.yaml: autoload colors doc macros plugin syntax *.vim
+	echo addon: vim-rails > $@
+	echo description: allows easier editing of Rails Applications >> $@
+	echo files: >> $@
+	find $^ -name '.svn' -prune -o -type f -printf '  - %p\n' >> $@
+
+# Build architecture-independent files here.
+.PHONY: binary-indep
+binary-indep: build
+	dh_testdir
+	dh_testroot
+	dh_installdirs
+	dh_install
+	dh_installdocs
+	dh_installman
+	dh_installchangelogs 
+	dh_fixperms
+	dh_compress
+	dh_installdeb
+	dh_gencontrol
+	dh_md5sums
+	dh_builddeb
+
+.PHONY: binary
+binary: binary-indep binary-arch
+
