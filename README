@@ -5,3 +5,4 @@ cd ~
 rm -Rf .vim
 git clone git://github.com/vodafon/vimrails.git .vim
 cp .vim/vimrc .vimrc
+//test
